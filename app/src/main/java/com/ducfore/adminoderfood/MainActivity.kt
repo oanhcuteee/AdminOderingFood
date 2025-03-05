@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.createNewUser.setOnClickListener {
-            val intent = Intent(this,AllItemActivity::class.java)
+            val intent = Intent(this,CreateUserActivity::class.java)
             startActivity(intent)
         }
         binding.oderDispath.setOnClickListener {

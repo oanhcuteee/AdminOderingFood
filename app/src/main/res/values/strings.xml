@@ -62,4 +62,9 @@
     <string name="save_information">Save Information</string>
     <string name="click_here_to_edit">Click Here To Edit</string>
     <string name="edit_your_profile">Edit Your Profile</string>
+    <string name="create_new_user_admin">Create New User Admin</string>
+    <string name="except">Except</string>
+    <string name="name_customer">Name Customer</string>
+    <string name="quantity_txt">Quantity</string>
+    <string name="accept1">Accept</string>
 </resources>

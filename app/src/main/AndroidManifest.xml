@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AdminOderFood"
         tools:targetApi="31">
         <activity
+            android:name=".PendingOderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUserActivity"
+            android:exported="false" />
+        <activity
             android:name=".AdminProfileActivity"
             android:exported="false" />
         <activity
