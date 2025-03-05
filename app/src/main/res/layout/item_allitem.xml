@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/item1" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nameItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/name_item"
+                app:layout_constraintStart_toEndOf="@id/cardViewImage"
+                app:layout_constraintTop_toTopOf="@id/cardViewImage" />
+
+            <TextView
+                android:id="@+id/priceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/price_item"
+                app:layout_constraintStart_toStartOf="@+id/nameItem"
+                app:layout_constraintTop_toBottomOf="@+id/nameItem" />
+
+            <ImageButton
+                android:id="@+id/plushBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/icon_plus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/minusBtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/icon_minus"
+                app:layout_constraintBottom_toBottomOf="@+id/quantitiesTextView"
+                app:layout_constraintEnd_toStartOf="@+id/quantitiesTextView"
+                app:layout_constraintTop_toTopOf="@+id/quantitiesTextView" />
+
+            <TextView
+                android:id="@+id/quantitiesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/quantity"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/plushBtn"
+                app:layout_constraintEnd_toStartOf="@+id/plushBtn"
+                app:layout_constraintTop_toTopOf="@+id/plushBtn" />
+
+            <ImageView
+                android:id="@+id/deletedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintEnd_toEndOf="@+id/plushBtn"
+                app:layout_constraintStart_toStartOf="@+id/minusBtn"
+                app:layout_constraintTop_toBottomOf="@+id/plushBtn"
+                app:srcCompat="@drawable/icon_deleted" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
